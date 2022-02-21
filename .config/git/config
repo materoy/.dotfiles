@@ -1,5 +1,11 @@
 [user]
-	name = Suraj Kushwah
-	email = suraj@bugswriter.com
+	name = Roy Matero
+	email = roymatero@gmail.com
 [advice]
 	statusHints = false
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

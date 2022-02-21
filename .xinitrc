@@ -1,1 +1,1 @@
-/home/bugs/.config/x11/xinitrc
+/home/redview/.config/x11/xinitrc

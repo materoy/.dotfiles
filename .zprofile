@@ -1,1 +1,1 @@
-/home/bugs/.config/shell/profile
+/home/redview/.config/shell/profile

@@ -6,7 +6,10 @@ xcompmgr &
 dunst &
 xset r rate 300 50 &
 sxhkd &
-xmodmap ~/.config/xmodmap/Xmodmap &
 unclutter &
+xmodmap ~/.config/xmodmap/Xmodmap &
+bluetoothctl power on &
+
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 exec dwm > /dev/null 2>&1
