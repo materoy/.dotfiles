@@ -25,3 +25,9 @@ function stopwatch(){
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias blueoff='bluetoothctl power off'
+alias blueon='bluetoothctl power on'
+
+alias lenovo='bluetoothctl connect F4:4E:FC:61:FB:4E'
+alias reloadblue='blueoff && blueon && lenovo'

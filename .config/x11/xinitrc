@@ -7,9 +7,11 @@ dunst &
 xset r rate 300 50 &
 sxhkd &
 unclutter &
-xmodmap ~/.config/xmodmap/Xmodmap &
+# xmodmap ~/.config/xmodmap/Xmodmap &
 bluetoothctl power on &
 
 export _JAVA_AWT_WM_NONREPARENTING=1
+# export LD_PRELOAD=/usr/local/lib/spotify-adblock.so
 
-exec dwm > /dev/null 2>&1
+# if dwm exits 0, restart -- this allows hot reloading of config.h
+while type dwm >/dev/null ; do dwm && continue || break ; done
