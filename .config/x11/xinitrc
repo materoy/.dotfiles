@@ -1,17 +1,25 @@
 #!/bin/sh
 
+play_intro () {
+    sleep 2 
+    mpg123 ~/Downloads/Music/prompt/greeting.mp3
+}
+
+picom --config ~/.config/picom/picom.conf &
 set_wallpaper &
-dwm_bar &
-xcompmgr &
+slstatus &
 dunst &
 xset r rate 300 50 &
 sxhkd &
 unclutter &
 # xmodmap ~/.config/xmodmap/Xmodmap &
 bluetoothctl power on &
+play_intro &
+
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 # export LD_PRELOAD=/usr/local/lib/spotify-adblock.so
 
 # if dwm exits 0, restart -- this allows hot reloading of config.h
 while type dwm >/dev/null ; do dwm && continue || break ; done
+
